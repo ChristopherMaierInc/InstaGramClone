@@ -1,0 +1,1739 @@
+  [1m[36m (15.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (8.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreatePhotos (20170927003133)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "photos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "image_url" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170927003133"]]
+  [1m[35m (13.1ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 60.240.154.190 at 2017-09-27 00:51:46 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (4.1ms)
+Completed 200 OK in 30ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/photos" for 60.240.154.190 at 2017-09-27 00:51:53 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[35mPhoto Load (0.3ms)[0m  SELECT "photos".* FROM "photos"
+  Rendered photos/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 931ms (Views: 928.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/photos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 60.240.154.190 at 2017-09-27 00:51:54 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 60.240.154.190 at 2017-09-27 00:51:54 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/photos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 60.240.154.190 at 2017-09-27 00:51:54 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 60.240.154.190 at 2017-09-27 00:51:54 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 60.240.154.190 at 2017-09-27 00:51:55 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-d2e5ccad1506299feea3a35bfb7c525e101bb3b214303715deb675fdc539948b.css?body=1" for 60.240.154.190 at 2017-09-27 00:51:55 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 60.240.154.190 at 2017-09-27 00:51:55 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 60.240.154.190 at 2017-09-27 00:51:55 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/photos/new" for 60.240.154.190 at 2017-09-27 00:52:18 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#new as HTML
+  Rendered photos/_form.html.erb (58.5ms)
+  Rendered photos/new.html.erb within layouts/application (64.4ms)
+Completed 200 OK in 96ms (Views: 91.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/photos" for 60.240.154.190 at 2017-09-27 00:52:21 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+sUx/k8+vodG6JU/+nOqP6GWyRS7eWG9QGWOd6da4IpyQcWQIUwoQ/lOCSBeJ/mVUVWhXfmK1B0HyTHYC6Nx7A==", "photo"=>{"image_url"=>"https://wallpaperbrowse.com/cool-images#images/cool-pics-2.jpg"}, "commit"=>"Create Photo"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "photos" ("image_url", "created_at", "updated_at") VALUES (?, ?, ?)  [["image_url", "https://wallpaperbrowse.com/cool-images#images/cool-pics-2.jpg"], ["created_at", "2017-09-27 00:52:21.394983"], ["updated_at", "2017-09-27 00:52:21.394983"]]
+  [1m[36m (11.5ms)[0m  [1mcommit transaction[0m
+Redirected to https://twitterclone01-christophermaier.c9users.io/photos/1
+Completed 302 Found in 22ms (ActiveRecord: 12.0ms)
+
+
+Started GET "/photos/1" for 60.240.154.190 at 2017-09-27 00:52:22 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPhoto Load (1.1ms)[0m  SELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered photos/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 51ms (Views: 34.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/photos" for 60.240.154.190 at 2017-09-27 00:52:29 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT "photos".* FROM "photos"[0m
+  Rendered photos/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 31ms (Views: 30.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/photos/new" for 60.240.154.190 at 2017-09-27 00:52:30 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#new as HTML
+  Rendered photos/_form.html.erb (1.6ms)
+  Rendered photos/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/photos" for 60.240.154.190 at 2017-09-27 00:52:33 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"r1mDKoiCxnPq+Pw9ZySxZGnqdFDYO1yl8zF0uVmsX1Yn3XdE5vBQt1VeYCLDcOLOmSkcGZrI6QW0ncsW9VXOMA==", "photo"=>{"image_url"=>"https://wallpaperbrowse.com/media/images/cool-wallpapers_3.jpg"}, "commit"=>"Create Photo"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "photos" ("image_url", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["image_url", "https://wallpaperbrowse.com/media/images/cool-wallpapers_3.jpg"], ["created_at", "2017-09-27 00:52:33.129457"], ["updated_at", "2017-09-27 00:52:33.129457"]]
+  [1m[35m (25.0ms)[0m  commit transaction
+Redirected to https://twitterclone01-christophermaier.c9users.io/photos/2
+Completed 302 Found in 34ms (ActiveRecord: 25.5ms)
+
+
+Started GET "/photos/2" for 60.240.154.190 at 2017-09-27 00:52:33 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPhoto Load (0.5ms)[0m  [1mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered photos/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 30ms (Views: 27.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/photos" for 60.240.154.190 at 2017-09-27 00:52:35 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[35mPhoto Load (0.3ms)[0m  SELECT "photos".* FROM "photos"
+  Rendered photos/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/photos/new" for 60.240.154.190 at 2017-09-27 00:52:42 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#new as HTML
+  Rendered photos/_form.html.erb (2.4ms)
+  Rendered photos/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 214ms (Views: 212.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/photos" for 60.240.154.190 at 2017-09-27 00:52:45 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qG6IXBoTycnTkMIDuXeqDXk0i0LxvJDIAYRy9mYy8AEg6nwydGFfDWw2XhwdI/mniffjC7NPJWhGKM1ZysthZw==", "photo"=>{"image_url"=>"https://wallpaperbrowse.com/media/images/maxresdefault_CgkPJSm.jpg"}, "commit"=>"Create Photo"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "photos" ("image_url", "created_at", "updated_at") VALUES (?, ?, ?)  [["image_url", "https://wallpaperbrowse.com/media/images/maxresdefault_CgkPJSm.jpg"], ["created_at", "2017-09-27 00:52:45.412260"], ["updated_at", "2017-09-27 00:52:45.412260"]]
+  [1m[36m (8.9ms)[0m  [1mcommit transaction[0m
+Redirected to https://twitterclone01-christophermaier.c9users.io/photos/3
+Completed 302 Found in 15ms (ActiveRecord: 9.3ms)
+
+
+Started GET "/photos/3" for 60.240.154.190 at 2017-09-27 00:52:45 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mPhoto Load (0.2ms)[0m  SELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered photos/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 34ms (Views: 32.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/photos" for 60.240.154.190 at 2017-09-27 00:52:47 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT "photos".* FROM "photos"[0m
+  Rendered photos/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 36ms (Views: 34.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/photos" for 60.240.154.190 at 2017-09-27 00:59:43 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  Rendered photos/index.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/ubuntu/workspace/app/views/photos/index.html.erb:13: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/ubuntu/workspace/app/views/photos/index.html.erb:15: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/photos/index.html.erb:13: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/photos/index.html.erb:15: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (46.0ms)
+
+
+Started GET "/photos" for 60.240.154.190 at 2017-09-27 01:00:04 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[35mPhoto Load (0.3ms)[0m  SELECT "photos".* FROM "photos"
+  Rendered photos/index.html.erb within layouts/application (30.5ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `delete_photo_path' for #<#<Class:0x00000004598220>:0x007fb5fc7ee5c8>
+Did you mean?  edit_photo_path):
+    4:   <%= image_tag photo.image_url %><br>
+    5:   <%= link_to 'Show', photo %>
+    6:   <%= link_to 'Edit', edit_photo_path(photo) %>
+    7:   <%= link_to 'Delete', delete_photo_path(photo) %>
+    8: </div>
+    9: 
+   10: <% end %>
+  app/views/photos/index.html.erb:7:in `block in _app_views_photos_index_html_erb___4252154988972007584_70209800984540'
+  app/views/photos/index.html.erb:1:in `_app_views_photos_index_html_erb___4252154988972007584_70209800984540'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (11.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (43.7ms)
+
+
+Started GET "/photos" for 60.240.154.190 at 2017-09-27 01:00:17 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.4ms)[0m  [1mSELECT "photos".* FROM "photos"[0m
+  Rendered photos/index.html.erb within layouts/application (40.0ms)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (undefined method `delete_photo_path' for #<#<Class:0x00000004598220>:0x007fb5fcdd2bb0>
+Did you mean?  edit_photo_path):
+    4:   <%= image_tag photo.image_url %><br>
+    5:   <%= link_to 'Show', photo %>
+    6:   <%= link_to 'Edit', edit_photo_path(photo) %>
+    7:   <!--<%= link_to 'Delete', delete_photo_path(photo) %>-->
+    8: </div>
+    9: 
+   10: <% end %>
+  app/views/photos/index.html.erb:7:in `block in _app_views_photos_index_html_erb___4252154988972007584_70209804078200'
+  app/views/photos/index.html.erb:1:in `_app_views_photos_index_html_erb___4252154988972007584_70209804078200'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (35.2ms)
+
+
+Started GET "/photos" for 60.240.154.190 at 2017-09-27 01:00:32 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[35mPhoto Load (0.4ms)[0m  SELECT "photos".* FROM "photos"
+  Rendered photos/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 35ms (Views: 33.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/photos.self-018a607d3bffa8cd65dea1d0d235d420fcdc2bd19e1c0fa454babfd7dee016da.css?body=1" for 60.240.154.190 at 2017-09-27 01:00:32 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/photos" for 60.240.154.190 at 2017-09-27 01:01:04 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT "photos".* FROM "photos"[0m
+  Rendered photos/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 43ms (Views: 42.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/photos.self-95154b1b81113a5e1590b18e7f9392cc647056f6286c4b136fcf2f8fffb7f059.css?body=1" for 60.240.154.190 at 2017-09-27 01:01:04 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/photos" for 60.240.154.190 at 2017-09-27 01:01:44 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[35mPhoto Load (0.2ms)[0m  SELECT "photos".* FROM "photos"
+  Rendered photos/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 44ms (Views: 43.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/photos.self-f21efd91fa76f14c36132a73f3d9dcfcf80820a7160d4f2fa2d86b4e96b102c3.css?body=1" for 60.240.154.190 at 2017-09-27 01:01:45 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/photos" for 60.240.154.190 at 2017-09-27 01:02:16 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT "photos".* FROM "photos"[0m
+  Rendered photos/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 34ms (Views: 33.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/photos.self-547c694ed8a19e58ec8ae70c5d5a5645c27cbb5512947803cb967a14278d904f.css?body=1" for 60.240.154.190 at 2017-09-27 01:02:16 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/photos" for 60.240.154.190 at 2017-09-27 01:04:03 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `desc' for #<PhotosController:0x007fb5fc80d1a8>):
+  app/controllers/photos_controller.rb:7:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (38.0ms)
+
+
+Started GET "/photos" for 60.240.154.190 at 2017-09-27 01:04:28 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[35mPhoto Load (0.5ms)[0m  SELECT "photos".* FROM "photos"  ORDER BY "photos"."created_at" DESC
+  Rendered photos/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 30ms (Views: 26.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/photos" for 60.240.154.190 at 2017-09-27 01:06:32 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.4ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY "photos"."created_at" DESC[0m
+  Rendered photos/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 25ms (Views: 21.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 60.240.154.190 at 2017-09-27 01:06:39 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[35mPhoto Load (0.3ms)[0m  SELECT "photos".* FROM "photos"  ORDER BY "photos"."created_at" DESC
+  Rendered photos/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 30ms (Views: 28.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/photos/3/edit" for 60.240.154.190 at 2017-09-27 01:06:49 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPhoto Load (0.3ms)[0m  [1mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered photos/_form.html.erb (1.7ms)
+  Rendered photos/edit.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 28ms (Views: 25.9ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/photos/3" for 60.240.154.190 at 2017-09-27 01:07:44 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Gk3MznuvUFIIeAzguDN2TN0HiXu/P7U3udfXjLEPw6+SyTigFd3GlrfekP8cZyXmLcThMv3MAJf+e2gjHfZSyQ==", "photo"=>{"image_url"=>"http://www.pawculture.com/uploads/Beagle-main.jpg"}, "commit"=>"Update Photo", "id"=>"3"}
+  [1m[35mPhoto Load (0.2ms)[0m  SELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "photos" SET "image_url" = ?, "updated_at" = ? WHERE "photos"."id" = ?  [["image_url", "http://www.pawculture.com/uploads/Beagle-main.jpg"], ["updated_at", "2017-09-27 01:07:44.617199"], ["id", 3]]
+  [1m[36m (14.7ms)[0m  [1mcommit transaction[0m
+Redirected to https://twitterclone01-christophermaier.c9users.io/photos/3
+Completed 302 Found in 21ms (ActiveRecord: 15.3ms)
+
+
+Started GET "/photos/3" for 60.240.154.190 at 2017-09-27 01:07:45 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mPhoto Load (0.2ms)[0m  SELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered photos/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/photos" for 60.240.154.190 at 2017-09-27 01:07:52 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.3ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY "photos"."created_at" DESC[0m
+  Rendered photos/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/photos/2/edit" for 60.240.154.190 at 2017-09-27 01:07:54 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPhoto Load (0.2ms)[0m  SELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered photos/_form.html.erb (1.6ms)
+  Rendered photos/edit.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 21ms (Views: 19.2ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/photos/2" for 60.240.154.190 at 2017-09-27 01:07:56 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PUy2DlSVPuRJgaX3PATclaUCUq12ebCQUgYdHPAc/0G1yEJgOueoIPYnOeiYUI8/VcE65DSKBTAVqqKzXOVuJw==", "photo"=>{"image_url"=>"https://i.pinimg.com/736x/bc/1d/6a/bc1d6a3384b27a33828e9ee1cab5ed0d--baby-beagle-beagle-pups.jpg"}, "commit"=>"Update Photo", "id"=>"2"}
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "photos" SET "image_url" = ?, "updated_at" = ? WHERE "photos"."id" = ?[0m  [["image_url", "https://i.pinimg.com/736x/bc/1d/6a/bc1d6a3384b27a33828e9ee1cab5ed0d--baby-beagle-beagle-pups.jpg"], ["updated_at", "2017-09-27 01:07:56.844841"], ["id", 2]]
+  [1m[35m (9.8ms)[0m  commit transaction
+Redirected to https://twitterclone01-christophermaier.c9users.io/photos/2
+Completed 302 Found in 15ms (ActiveRecord: 10.5ms)
+
+
+Started GET "/photos/2" for 60.240.154.190 at 2017-09-27 01:07:57 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered photos/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 19ms (Views: 17.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/photos" for 60.240.154.190 at 2017-09-27 01:07:59 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[35mPhoto Load (0.3ms)[0m  SELECT "photos".* FROM "photos"  ORDER BY "photos"."created_at" DESC
+  Rendered photos/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/photos/1/edit" for 60.240.154.190 at 2017-09-27 01:08:08 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered photos/_form.html.erb (1.7ms)
+  Rendered photos/edit.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 22ms (Views: 20.2ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/photos/1" for 60.240.154.190 at 2017-09-27 01:08:11 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ADPKku9ImSr0IkBH+WVbsGGQz1/2dzbCo7hGoprwGKKItz78gToP7kuE3FhdMQgakVOnFrSEg2LkFPkNNgmJxA==", "photo"=>{"image_url"=>"https://vetstreet-brightspot.s3.amazonaws.com/6b/2d0f009e8c11e0a2380050568d634f/file/Beagle-2-645mk062311.jpg"}, "commit"=>"Update Photo", "id"=>"1"}
+  [1m[35mPhoto Load (0.2ms)[0m  SELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "photos" SET "image_url" = ?, "updated_at" = ? WHERE "photos"."id" = ?  [["image_url", "https://vetstreet-brightspot.s3.amazonaws.com/6b/2d0f009e8c11e0a2380050568d634f/file/Beagle-2-645mk062311.jpg"], ["updated_at", "2017-09-27 01:08:11.448744"], ["id", 1]]
+  [1m[36m (10.1ms)[0m  [1mcommit transaction[0m
+Redirected to https://twitterclone01-christophermaier.c9users.io/photos/1
+Completed 302 Found in 15ms (ActiveRecord: 10.7ms)
+
+
+Started GET "/photos/1" for 60.240.154.190 at 2017-09-27 01:08:11 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPhoto Load (0.2ms)[0m  SELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered photos/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/photos" for 60.240.154.190 at 2017-09-27 01:08:13 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.3ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY "photos"."created_at" DESC[0m
+  Rendered photos/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddCommentToPhotos (20170927011628)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "photos" ADD "comment" text[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170927011628"]]
+  [1m[36m (8.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 60.240.154.190 at 2017-09-27 01:17:36 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PhotosController#index as HTML
+  [1m[35mPhoto Load (0.4ms)[0m  SELECT "photos".* FROM "photos"  ORDER BY "photos"."created_at" DESC
+  Rendered photos/index.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 380ms (Views: 354.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/photos/new" for 60.240.154.190 at 2017-09-27 01:17:57 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#new as HTML
+  Rendered photos/_form.html.erb (33.4ms)
+  Rendered photos/new.html.erb within layouts/application (40.4ms)
+Completed 200 OK in 93ms (Views: 92.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/photos" for 60.240.154.190 at 2017-09-27 01:18:35 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"a4187PFP1Qwo42V0YWeC8budyEmRCB19KJwg0hs1e1PjCYiCnz1DyJdF+WvFM9FbS16gANP7qN1vMJ99t8zqNQ==", "photo"=>{"image_url"=>"http://elelur.com/data_images/dog-breeds/beagle/beagle-06.jpg"}, "commit"=>"Create Photo"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "photos" ("image_url", "created_at", "updated_at") VALUES (?, ?, ?)  [["image_url", "http://elelur.com/data_images/dog-breeds/beagle/beagle-06.jpg"], ["created_at", "2017-09-27 01:18:35.029796"], ["updated_at", "2017-09-27 01:18:35.029796"]]
+  [1m[36m (10.5ms)[0m  [1mcommit transaction[0m
+Redirected to https://twitterclone01-christophermaier.c9users.io/photos/4
+Completed 302 Found in 18ms (ActiveRecord: 11.1ms)
+
+
+Started GET "/photos/4" for 60.240.154.190 at 2017-09-27 01:18:35 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mPhoto Load (0.4ms)[0m  SELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered photos/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 38ms (Views: 25.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/photos" for 60.240.154.190 at 2017-09-27 01:18:38 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.3ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY "photos"."created_at" DESC[0m
+  Rendered photos/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 34ms (Views: 32.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/photos" for 60.240.154.190 at 2017-09-27 01:20:25 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[35mPhoto Load (1.1ms)[0m  SELECT "photos".* FROM "photos"  ORDER BY "photos"."created_at" DESC
+  Rendered photos/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 39ms (Views: 36.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/photos/new" for 60.240.154.190 at 2017-09-27 01:20:41 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#new as HTML
+  Rendered photos/_form.html.erb (4.8ms)
+  Rendered photos/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 34ms (Views: 32.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/photos" for 60.240.154.190 at 2017-09-27 01:21:04 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vl5xPglknYTy6M1c2xV55nReJL3LWhnweVN6i9Kof0Pe2oVQZxYLQE1OUUN/QSpMhJ1M9ImprFA+/8UkflHuJQ==", "photo"=>{"image_url"=>"https://www.rover.com/blog/wp-content/uploads/2014/08/smiling-beagle.jpg", "comment"=>"Cute young beagle"}, "commit"=>"Create Photo"}
+Unpermitted parameter: comment
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "photos" ("image_url", "created_at", "updated_at") VALUES (?, ?, ?)  [["image_url", "https://www.rover.com/blog/wp-content/uploads/2014/08/smiling-beagle.jpg"], ["created_at", "2017-09-27 01:21:04.789073"], ["updated_at", "2017-09-27 01:21:04.789073"]]
+  [1m[36m (8.4ms)[0m  [1mcommit transaction[0m
+Redirected to https://twitterclone01-christophermaier.c9users.io/photos/5
+Completed 302 Found in 13ms (ActiveRecord: 8.9ms)
+
+
+Started GET "/photos/5" for 60.240.154.190 at 2017-09-27 01:21:05 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mPhoto Load (0.2ms)[0m  SELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered photos/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 23ms (Views: 21.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/photos" for 60.240.154.190 at 2017-09-27 01:21:08 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.4ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY "photos"."created_at" DESC[0m
+  Rendered photos/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 28ms (Views: 26.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/photos/5/edit" for 60.240.154.190 at 2017-09-27 01:21:25 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mPhoto Load (0.2ms)[0m  SELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered photos/_form.html.erb (2.6ms)
+  Rendered photos/edit.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 25ms (Views: 23.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/photos/5" for 60.240.154.190 at 2017-09-27 01:21:30 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPhoto Load (0.3ms)[0m  [1mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered photos/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 22ms (Views: 19.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/photos/5/edit" for 60.240.154.190 at 2017-09-27 01:21:32 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mPhoto Load (0.2ms)[0m  SELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered photos/_form.html.erb (2.4ms)
+  Rendered photos/edit.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 22ms (Views: 20.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/photos" for 60.240.154.190 at 2017-09-27 01:22:24 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.5ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY "photos"."created_at" DESC[0m
+  Rendered photos/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 34ms (Views: 30.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/photos/5/edit" for 60.240.154.190 at 2017-09-27 01:22:27 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mPhoto Load (0.4ms)[0m  SELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered photos/_form.html.erb (2.3ms)
+  Rendered photos/edit.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 42ms (Views: 39.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/photos/5/edit" for 60.240.154.190 at 2017-09-27 01:22:30 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered photos/_form.html.erb (3.7ms)
+  Rendered photos/edit.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 32ms (Views: 30.2ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/photos/5" for 60.240.154.190 at 2017-09-27 01:22:35 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TsXq+RAwHCpsse9fG48aHcKoSvEKcsx4v/v8+5LBxVzGQR6XfkKK7tMXc0C/20m3MmsiuEiBedj4V0NUPjhUOg==", "photo"=>{"image_url"=>"https://www.rover.com/blog/wp-content/uploads/2014/08/smiling-beagle.jpg", "comment"=>"New comment"}, "commit"=>"Update Photo", "id"=>"5"}
+  [1m[35mPhoto Load (0.2ms)[0m  SELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "photos" SET "comment" = ?, "updated_at" = ? WHERE "photos"."id" = ?  [["comment", "New comment"], ["updated_at", "2017-09-27 01:22:35.126509"], ["id", 5]]
+  [1m[36m (11.9ms)[0m  [1mcommit transaction[0m
+Redirected to https://twitterclone01-christophermaier.c9users.io/photos/5
+Completed 302 Found in 20ms (ActiveRecord: 12.5ms)
+
+
+Started GET "/photos/5" for 60.240.154.190 at 2017-09-27 01:22:35 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mPhoto Load (0.2ms)[0m  SELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered photos/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 27ms (Views: 25.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/photos" for 60.240.154.190 at 2017-09-27 01:22:37 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.3ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY "photos"."created_at" DESC[0m
+  Rendered photos/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 30ms (Views: 28.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/photos/5" for 60.240.154.190 at 2017-09-27 01:23:06 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mPhoto Load (0.2ms)[0m  SELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered photos/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 27ms (Views: 25.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/photos/5/edit" for 60.240.154.190 at 2017-09-27 01:23:08 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPhoto Load (0.3ms)[0m  [1mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered photos/_form.html.erb (1.9ms)
+  Rendered photos/edit.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/photos/4/edit" for 60.240.154.190 at 2017-09-27 01:23:23 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mPhoto Load (0.2ms)[0m  SELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered photos/_form.html.erb (2.0ms)
+  Rendered photos/edit.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 22ms (Views: 20.8ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/photos/4" for 60.240.154.190 at 2017-09-27 01:23:34 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PreOg3GCX9icC8F31dWOn/jgmJdem4PdpaCoFyrjHPa2M3rtH/DJHCOtXWhxgd01CCPw3hxoNn3iDBe4hhqNkA==", "photo"=>{"image_url"=>"http://elelur.com/data_images/dog-breeds/beagle/beagle-06.jpg", "comment"=>"Beagle 03"}, "commit"=>"Update Photo", "id"=>"4"}
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "photos" SET "comment" = ?, "updated_at" = ? WHERE "photos"."id" = ?[0m  [["comment", "Beagle 03"], ["updated_at", "2017-09-27 01:23:34.656862"], ["id", 4]]
+  [1m[35m (8.6ms)[0m  commit transaction
+Redirected to https://twitterclone01-christophermaier.c9users.io/photos/4
+Completed 302 Found in 14ms (ActiveRecord: 9.1ms)
+
+
+Started GET "/photos/4" for 60.240.154.190 at 2017-09-27 01:23:35 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered photos/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 26ms (Views: 24.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/photos" for 60.240.154.190 at 2017-09-27 01:23:38 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[35mPhoto Load (0.3ms)[0m  SELECT "photos".* FROM "photos"  ORDER BY "photos"."created_at" DESC
+  Rendered photos/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/photos/4/edit" for 60.240.154.190 at 2017-09-27 01:23:45 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered photos/_form.html.erb (2.0ms)
+  Rendered photos/edit.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/photos" for 60.240.154.190 at 2017-09-27 01:24:28 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[35mPhoto Load (0.4ms)[0m  SELECT "photos".* FROM "photos"  ORDER BY "photos"."created_at" DESC
+  Rendered photos/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/photos" for 60.240.154.190 at 2017-09-27 01:24:28 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[36mPhoto Load (0.3ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY "photos"."created_at" DESC[0m
+  Rendered photos/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/photos" for 60.240.154.190 at 2017-09-27 01:27:12 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[35mPhoto Load (0.3ms)[0m  SELECT "photos".* FROM "photos"  ORDER BY "photos"."created_at" DESC
+  Rendered photos/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 22ms (Views: 20.2ms | ActiveRecord: 0.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DeviseCreateUsers (20170927012953)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.5ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170927012953"]]
+  [1m[36m (12.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started GET "/" for 60.240.154.190 at 2017-09-27 01:32:52 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PhotosController#index as HTML
+Completed 401 Unauthorized in 19ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 60.240.154.190 at 2017-09-27 01:32:53 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (9.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (46.7ms)
+Completed 200 OK in 353ms (Views: 328.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_up" for 60.240.154.190 at 2017-09-27 01:32:56 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (3.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/devise-4.3.0/app/views/devise/registrations/new.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 33ms (Views: 31.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 60.240.154.190 at 2017-09-27 01:33:08 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BQRKcMh7iklbDFOo5l4IxQX1/QvTecY7+f67/bgzoJWNgL4epgkcjeSqz7dCCltv9TaVQpGKc5u+UgRSFMox8w==", "user"=>{"email"=>"user@email.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'user@email.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["email", "user@email.com"], ["encrypted_password", "$2a$11$vlUdekxsWIjMHIT.qnj0DOP0taa82dFQfScJZMu2JOYUTI0iktGDy"], ["created_at", "2017-09-27 01:33:08.506117"], ["updated_at", "2017-09-27 01:33:08.506117"]]
+  [1m[36m (10.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2017-09-27 01:33:08.520194"], ["current_sign_in_at", "2017-09-27 01:33:08.520194"], ["last_sign_in_ip", "60.240.154.190"], ["current_sign_in_ip", "60.240.154.190"], ["sign_in_count", 1], ["updated_at", "2017-09-27 01:33:08.521342"], ["id", 1]]
+  [1m[35m (10.7ms)[0m  commit transaction
+Redirected to https://twitterclone01-christophermaier.c9users.io/
+Completed 302 Found in 242ms (ActiveRecord: 22.7ms)
+
+
+Started GET "/" for 60.240.154.190 at 2017-09-27 01:33:08 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mPhoto Load (0.3ms)[0m  SELECT "photos".* FROM "photos"  ORDER BY "photos"."created_at" DESC
+  Rendered photos/index.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 65ms (Views: 57.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 60.240.154.190 at 2017-09-27 01:37:21 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 1.2ms)
+
+NameError (undefined local variable or method `confirmed_at' for #<User:0x007f2599f70d30>
+Did you mean?  confirmed?):
+  activemodel (4.2.5) lib/active_model/attribute_methods.rb:433:in `method_missing'
+  devise (4.3.0) lib/devise/models/confirmable.rb:105:in `confirmed?'
+  devise (4.3.0) lib/devise/models/confirmable.rb:186:in `confirmation_required?'
+  devise (4.3.0) lib/devise/models/confirmable.rb:143:in `active_for_authentication?'
+  devise (4.3.0) lib/devise/hooks/activatable.rb:5:in `block in <top (required)>'
+  warden (1.2.7) lib/warden/hooks.rb:15:in `block in _run_callbacks'
+  warden (1.2.7) lib/warden/hooks.rb:10:in `each'
+  warden (1.2.7) lib/warden/hooks.rb:10:in `_run_callbacks'
+  warden (1.2.7) lib/warden/manager.rb:52:in `_run_callbacks'
+  warden (1.2.7) lib/warden/proxy.rb:180:in `set_user'
+  warden (1.2.7) lib/warden/proxy.rb:218:in `user'
+  warden (1.2.7) lib/warden/proxy.rb:323:in `_perform_authentication'
+  warden (1.2.7) lib/warden/proxy.rb:128:in `authenticate!'
+  devise (4.3.0) lib/devise/controllers/helpers.rb:116:in `authenticate_user!'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:432:in `block in make_lambda'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:164:in `block in halting'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:504:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:504:in `each'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (1.6.8) lib/rack/etag.rb:24:in `call'
+  rack (1.6.8) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.8) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.4ms)
+
+
+Started GET "/" for 60.240.154.190 at 2017-09-27 01:38:21 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.2ms)
+
+NameError (undefined local variable or method `confirmed_at' for #<User:0x007f259a44f810>
+Did you mean?  confirmed?):
+  activemodel (4.2.5) lib/active_model/attribute_methods.rb:433:in `method_missing'
+  devise (4.3.0) lib/devise/models/confirmable.rb:105:in `confirmed?'
+  devise (4.3.0) lib/devise/models/confirmable.rb:186:in `confirmation_required?'
+  devise (4.3.0) lib/devise/models/confirmable.rb:143:in `active_for_authentication?'
+  devise (4.3.0) lib/devise/hooks/activatable.rb:5:in `block in <top (required)>'
+  warden (1.2.7) lib/warden/hooks.rb:15:in `block in _run_callbacks'
+  warden (1.2.7) lib/warden/hooks.rb:10:in `each'
+  warden (1.2.7) lib/warden/hooks.rb:10:in `_run_callbacks'
+  warden (1.2.7) lib/warden/manager.rb:52:in `_run_callbacks'
+  warden (1.2.7) lib/warden/proxy.rb:180:in `set_user'
+  warden (1.2.7) lib/warden/proxy.rb:218:in `user'
+  warden (1.2.7) lib/warden/proxy.rb:323:in `_perform_authentication'
+  warden (1.2.7) lib/warden/proxy.rb:128:in `authenticate!'
+  devise (4.3.0) lib/devise/controllers/helpers.rb:116:in `authenticate_user!'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:432:in `block in make_lambda'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:164:in `block in halting'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:504:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:504:in `each'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (1.6.8) lib/rack/etag.rb:24:in `call'
+  rack (1.6.8) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.8) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.4ms)
+
+
+Started GET "/" for 60.240.154.190 at 2017-09-27 01:39:39 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.2ms)
+
+NameError (undefined local variable or method `confirmed_at' for #<User:0x007f259a5d1e68>
+Did you mean?  confirmed?):
+  activemodel (4.2.5) lib/active_model/attribute_methods.rb:433:in `method_missing'
+  devise (4.3.0) lib/devise/models/confirmable.rb:105:in `confirmed?'
+  devise (4.3.0) lib/devise/models/confirmable.rb:186:in `confirmation_required?'
+  devise (4.3.0) lib/devise/models/confirmable.rb:143:in `active_for_authentication?'
+  devise (4.3.0) lib/devise/hooks/activatable.rb:5:in `block in <top (required)>'
+  warden (1.2.7) lib/warden/hooks.rb:15:in `block in _run_callbacks'
+  warden (1.2.7) lib/warden/hooks.rb:10:in `each'
+  warden (1.2.7) lib/warden/hooks.rb:10:in `_run_callbacks'
+  warden (1.2.7) lib/warden/manager.rb:52:in `_run_callbacks'
+  warden (1.2.7) lib/warden/proxy.rb:180:in `set_user'
+  warden (1.2.7) lib/warden/proxy.rb:218:in `user'
+  warden (1.2.7) lib/warden/proxy.rb:323:in `_perform_authentication'
+  warden (1.2.7) lib/warden/proxy.rb:128:in `authenticate!'
+  devise (4.3.0) lib/devise/controllers/helpers.rb:116:in `authenticate_user!'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:432:in `block in make_lambda'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:164:in `block in halting'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:504:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:504:in `each'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (1.6.8) lib/rack/etag.rb:24:in `call'
+  rack (1.6.8) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.8) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.0ms)
+
+
+Started GET "/" for 60.240.154.190 at 2017-09-27 01:40:37 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.2ms)
+
+NameError (undefined local variable or method `confirmed_at' for #<User:0x007f2598dd7c90>
+Did you mean?  confirmed?):
+  activemodel (4.2.5) lib/active_model/attribute_methods.rb:433:in `method_missing'
+  devise (4.3.0) lib/devise/models/confirmable.rb:105:in `confirmed?'
+  devise (4.3.0) lib/devise/models/confirmable.rb:186:in `confirmation_required?'
+  devise (4.3.0) lib/devise/models/confirmable.rb:143:in `active_for_authentication?'
+  devise (4.3.0) lib/devise/hooks/activatable.rb:5:in `block in <top (required)>'
+  warden (1.2.7) lib/warden/hooks.rb:15:in `block in _run_callbacks'
+  warden (1.2.7) lib/warden/hooks.rb:10:in `each'
+  warden (1.2.7) lib/warden/hooks.rb:10:in `_run_callbacks'
+  warden (1.2.7) lib/warden/manager.rb:52:in `_run_callbacks'
+  warden (1.2.7) lib/warden/proxy.rb:180:in `set_user'
+  warden (1.2.7) lib/warden/proxy.rb:218:in `user'
+  warden (1.2.7) lib/warden/proxy.rb:323:in `_perform_authentication'
+  warden (1.2.7) lib/warden/proxy.rb:128:in `authenticate!'
+  devise (4.3.0) lib/devise/controllers/helpers.rb:116:in `authenticate_user!'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:432:in `block in make_lambda'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:164:in `block in halting'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:504:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:504:in `each'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (1.6.8) lib/rack/etag.rb:24:in `call'
+  rack (1.6.8) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.8) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.6ms)
+
+
+Started GET "/" for 60.240.154.190 at 2017-09-27 01:41:07 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+SyntaxError (/home/ubuntu/workspace/app/models/user.rb:7: syntax error, unexpected keyword_end):
+  app/models/user.rb:7: syntax error, unexpected keyword_end
+  config/routes.rb:2:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.3ms)
+
+
+Started GET "/" for 60.240.154.190 at 2017-09-27 01:41:18 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mPhoto Load (0.3ms)[0m  SELECT "photos".* FROM "photos"  ORDER BY "photos"."created_at" DESC
+  Rendered photos/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 43ms (Views: 23.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 60.240.154.190 at 2017-09-27 01:42:10 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mPhoto Load (0.4ms)[0m  SELECT "photos".* FROM "photos"  ORDER BY "photos"."created_at" DESC
+  Rendered photos/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 34ms (Views: 30.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 60.240.154.190 at 2017-09-27 01:42:35 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mPhoto Load (0.3ms)[0m  SELECT "photos".* FROM "photos"  ORDER BY "photos"."created_at" DESC
+  Rendered photos/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 31ms (Views: 28.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 60.240.154.190 at 2017-09-27 01:47:40 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mPhoto Load (0.4ms)[0m  SELECT "photos".* FROM "photos"  ORDER BY "photos"."created_at" DESC
+  Rendered photos/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 55ms (Views: 52.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/photos.self-5fcafedb29a986ae5ffcef3f78e4ecc0c0e7f85f8d2700d623811250b19fa3b0.css?body=1" for 60.240.154.190 at 2017-09-27 01:47:40 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddUserToPhotos (20170927015035)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "photos" ADD "user_id" integer[0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "index_photos_on_user_id" ON "photos" ("user_id")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170927015035"]]
+  [1m[36m (11.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_photos_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_photos_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+
+
+Started GET "/" for 60.240.154.190 at 2017-09-27 01:51:33 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PhotosController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mPhoto Load (0.3ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY "photos"."created_at" DESC[0m
+  Rendered photos/index.html.erb within layouts/application (19.3ms)
+Completed 200 OK in 381ms (Views: 338.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/photos/new" for 60.240.154.190 at 2017-09-27 01:51:38 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered photos/_form.html.erb (70.4ms)
+  Rendered photos/new.html.erb within layouts/application (76.9ms)
+Completed 200 OK in 108ms (Views: 105.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/photos/new" for 60.240.154.190 at 2017-09-27 01:54:18 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered photos/_form.html.erb (5.7ms)
+  Rendered photos/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 95ms (Views: 48.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/photos" for 60.240.154.190 at 2017-09-27 01:54:20 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mPhoto Load (0.3ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY "photos"."created_at" DESC[0m
+  Rendered photos/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 43ms (Views: 39.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/photos" for 60.240.154.190 at 2017-09-27 01:54:27 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mPhoto Load (0.3ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY "photos"."created_at" DESC[0m
+  Rendered photos/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 20ms (Views: 17.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/photos/new" for 60.240.154.190 at 2017-09-27 01:54:32 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered photos/_form.html.erb (2.1ms)
+  Rendered photos/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 22ms (Views: 20.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/photos" for 60.240.154.190 at 2017-09-27 01:55:15 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ulF0g0Fk/OtJOn2lZBE68uvBG7abu/kt6eMzHOuQLO0y1YDtLxZqL/ac4brARWlYGwJz/9lITI2uT4yzR2m9iw==", "photo"=>{"image_url"=>"https://i.pinimg.com/236x/75/b7/f1/75b7f1e86e579e7e9cbec2999e856ff8--rayban-beagle-puppies.jpg", "comment"=>"Cutest Beagle Ever"}, "commit"=>"Create Photo"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.2ms)
+
+NameError (undefined local variable or method `current_user_id' for #<PhotosController:0x007fc901ccf778>
+Did you mean?  current_user):
+  app/controllers/photos_controller.rb:28:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (41.1ms)
+
+
+Started POST "/photos" for 60.240.154.190 at 2017-09-27 01:56:13 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ulF0g0Fk/OtJOn2lZBE68uvBG7abu/kt6eMzHOuQLO0y1YDtLxZqL/ac4brARWlYGwJz/9lITI2uT4yzR2m9iw==", "photo"=>{"image_url"=>"https://i.pinimg.com/236x/75/b7/f1/75b7f1e86e579e7e9cbec2999e856ff8--rayban-beagle-puppies.jpg", "comment"=>"Cutest Beagle Ever"}, "commit"=>"Create Photo"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.2ms)
+
+NameError (undefined local variable or method `current_user_id' for #<PhotosController:0x007fc8fc028a60>
+Did you mean?  current_user):
+  app/controllers/photos_controller.rb:28:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.3ms)
+
+
+Started POST "/photos" for 60.240.154.190 at 2017-09-27 01:57:12 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ulF0g0Fk/OtJOn2lZBE68uvBG7abu/kt6eMzHOuQLO0y1YDtLxZqL/ac4brARWlYGwJz/9lITI2uT4yzR2m9iw==", "photo"=>{"image_url"=>"https://i.pinimg.com/236x/75/b7/f1/75b7f1e86e579e7e9cbec2999e856ff8--rayban-beagle-puppies.jpg", "comment"=>"Cutest Beagle Ever"}, "commit"=>"Create Photo"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "photos" ("image_url", "comment", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["image_url", "https://i.pinimg.com/236x/75/b7/f1/75b7f1e86e579e7e9cbec2999e856ff8--rayban-beagle-puppies.jpg"], ["comment", "Cutest Beagle Ever"], ["user_id", 1], ["created_at", "2017-09-27 01:57:12.148843"], ["updated_at", "2017-09-27 01:57:12.148843"]]
+  [1m[35m (11.2ms)[0m  commit transaction
+Redirected to https://twitterclone01-christophermaier.c9users.io/photos/6
+Completed 302 Found in 45ms (ActiveRecord: 13.1ms)
+
+
+Started GET "/photos/6" for 60.240.154.190 at 2017-09-27 01:57:12 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mPhoto Load (0.4ms)[0m  SELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered photos/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 43ms (Views: 34.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/photos" for 60.240.154.190 at 2017-09-27 01:57:14 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mPhoto Load (0.4ms)[0m  SELECT "photos".* FROM "photos"  ORDER BY "photos"."created_at" DESC
+  Rendered photos/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 44ms (Views: 40.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/photos/6/edit" for 60.240.154.190 at 2017-09-27 01:57:49 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mPhoto Load (0.1ms)[0m  SELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered photos/_form.html.erb (3.9ms)
+  Rendered photos/edit.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 39ms (Views: 34.4ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/photos/6" for 60.240.154.190 at 2017-09-27 01:57:53 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3r0+6rBONcR06IIeBD58b/LpG+FthtvW0modOieGHWtWOcqE3jyjAMtOHgGgai/FAipzqC91bnaVxqKVi3+MDQ==", "photo"=>{"image_url"=>"https://i.pinimg.com/736x/e0/d7/ef/e0d7ef69ab0b5f9c44099588d01c1da9--beagle-puppies-beagles.jpg", "comment"=>"Cutest Beagle Ever"}, "commit"=>"Update Photo", "id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mPhoto Load (0.1ms)[0m  SELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "photos" SET "image_url" = ?, "updated_at" = ? WHERE "photos"."id" = ?  [["image_url", "https://i.pinimg.com/736x/e0/d7/ef/e0d7ef69ab0b5f9c44099588d01c1da9--beagle-puppies-beagles.jpg"], ["updated_at", "2017-09-27 01:57:53.526404"], ["id", 6]]
+  [1m[36m (9.5ms)[0m  [1mcommit transaction[0m
+Redirected to https://twitterclone01-christophermaier.c9users.io/photos/6
+Completed 302 Found in 16ms (ActiveRecord: 10.3ms)
+
+
+Started GET "/photos/6" for 60.240.154.190 at 2017-09-27 01:57:53 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered photos/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 18.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/photos" for 60.240.154.190 at 2017-09-27 01:57:55 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mPhoto Load (0.4ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY "photos"."created_at" DESC[0m
+  Rendered photos/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 30ms (Views: 27.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/photos" for 60.240.154.190 at 2017-09-27 01:58:34 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mPhoto Load (0.5ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY "photos"."created_at" DESC[0m
+  Rendered photos/index.html.erb within layouts/application (11.4ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (undefined method `user' for #<Photo:0x007fc902269058>
+Did you mean?  user_id):
+    2: 
+    3: <div class="insta-photo">
+    4:   <%= image_tag photo.image_url %><br>
+    5:   <%= photo.user.inspect %>
+    6:   <br>
+    7:   <%= link_to 'Show', photo %>
+    8:   <%= link_to 'Edit', edit_photo_path(photo) %>
+  app/views/photos/index.html.erb:5:in `block in _app_views_photos_index_html_erb___1626854729585614470_70250650326260'
+  app/views/photos/index.html.erb:1:in `_app_views_photos_index_html_erb___1626854729585614470_70250650326260'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (61.6ms)
+
+
+Started GET "/photos" for 60.240.154.190 at 2017-09-27 02:02:27 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 1.0ms)
+
+SyntaxError (/home/ubuntu/workspace/app/models/photo.rb:2: syntax error, unexpected ':', expecting keyword_end
+  belongs_to: user
+             ^):
+  app/models/photo.rb:2: syntax error, unexpected ':', expecting keyword_end
+  app/controllers/photos_controller.rb:7:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (34.6ms)
+
+
+Started GET "/photos" for 60.240.154.190 at 2017-09-27 02:02:51 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mPhoto Load (0.3ms)[0m  SELECT "photos".* FROM "photos"  ORDER BY "photos"."created_at" DESC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered photos/index.html.erb within layouts/application (35.7ms)
+Completed 200 OK in 88ms (Views: 59.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/photos" for 60.240.154.190 at 2017-09-27 02:06:10 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mPhoto Load (0.3ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY "photos"."created_at" DESC[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered photos/index.html.erb within layouts/application (5.7ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (undefined method `email' for nil:NilClass):
+    2: 
+    3: <div class="insta-photo">
+    4:   <%= image_tag photo.image_url %><br>
+    5:   <%= photo.user.email %>
+    6:   <br>
+    7:   <%= link_to 'Show', photo %>
+    8:   <%= link_to 'Edit', edit_photo_path(photo) %>
+  app/views/photos/index.html.erb:5:in `block in _app_views_photos_index_html_erb___1626854729585614470_70250648357700'
+  app/views/photos/index.html.erb:1:in `_app_views_photos_index_html_erb___1626854729585614470_70250648357700'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (32.9ms)
+
+
+Started GET "/photos" for 60.240.154.190 at 2017-09-27 02:06:26 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mPhoto Load (0.3ms)[0m  SELECT "photos".* FROM "photos"  ORDER BY "photos"."created_at" DESC
+  Rendered photos/index.html.erb within layouts/application (11.2ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (undefined method `current_user' for #<Photo:0x007fc8fc24e358>):
+    2: 
+    3: <div class="insta-photo">
+    4:   <%= image_tag photo.image_url %><br>
+    5:   <%= photo.current_user %>
+    6:   <br>
+    7:   <%= link_to 'Show', photo %>
+    8:   <%= link_to 'Edit', edit_photo_path(photo) %>
+  app/views/photos/index.html.erb:5:in `block in _app_views_photos_index_html_erb___1626854729585614470_70250601070480'
+  app/views/photos/index.html.erb:1:in `_app_views_photos_index_html_erb___1626854729585614470_70250601070480'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (34.7ms)
+
+
+Started GET "/photos" for 60.240.154.190 at 2017-09-27 02:06:52 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mPhoto Load (0.4ms)[0m  SELECT "photos".* FROM "photos"  ORDER BY "photos"."created_at" DESC
+  Rendered photos/index.html.erb within layouts/application (13.2ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.7ms)
+
+ActionView::Template::Error (undefined method `email' for #<Photo:0x000000021f87e8>):
+    2: 
+    3: <div class="insta-photo">
+    4:   <%= image_tag photo.image_url %><br>
+    5:   <%= photo.email %>
+    6:   <br>
+    7:   <%= link_to 'Show', photo %>
+    8:   <%= link_to 'Edit', edit_photo_path(photo) %>
+  app/views/photos/index.html.erb:5:in `block in _app_views_photos_index_html_erb___1626854729585614470_25133000'
+  app/views/photos/index.html.erb:1:in `_app_views_photos_index_html_erb___1626854729585614470_25133000'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (35.0ms)
+
+
+Started GET "/photos" for 60.240.154.190 at 2017-09-27 02:07:04 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mPhoto Load (0.3ms)[0m  SELECT "photos".* FROM "photos"  ORDER BY "photos"."created_at" DESC
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered photos/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 25ms (Views: 22.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/photos" for 60.240.154.190 at 2017-09-27 02:07:16 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mPhoto Load (0.3ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY "photos"."created_at" DESC[0m
+  Rendered photos/index.html.erb within layouts/application (12.1ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (undefined method `current_user' for #<Photo:0x007fc901329ef8>):
+    2: 
+    3: <div class="insta-photo">
+    4:   <%= image_tag photo.image_url %><br>
+    5:   <%= photo.current_user %>
+    6:   <br>
+    7:   <%= link_to 'Show', photo %>
+    8:   <%= link_to 'Edit', edit_photo_path(photo) %>
+  app/views/photos/index.html.erb:5:in `block in _app_views_photos_index_html_erb___1626854729585614470_70250642798440'
+  app/views/photos/index.html.erb:1:in `_app_views_photos_index_html_erb___1626854729585614470_70250642798440'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (43.6ms)
+
+
+Started GET "/photos" for 60.240.154.190 at 2017-09-27 02:07:33 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mPhoto Load (0.3ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY "photos"."created_at" DESC[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered photos/index.html.erb within layouts/application (5.9ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    2: 
+    3: <div class="insta-photo">
+    4:   <%= image_tag photo.image_url %><br>
+    5:   <%= photo.user.id %>
+    6:   <br>
+    7:   <%= link_to 'Show', photo %>
+    8:   <%= link_to 'Edit', edit_photo_path(photo) %>
+  app/views/photos/index.html.erb:5:in `block in _app_views_photos_index_html_erb___1626854729585614470_70250648715900'
+  app/views/photos/index.html.erb:1:in `_app_views_photos_index_html_erb___1626854729585614470_70250648715900'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (34.8ms)
+
+
+Started GET "/photos" for 60.240.154.190 at 2017-09-27 02:10:47 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mPhoto Load (0.4ms)[0m  SELECT "photos".* FROM "photos"  ORDER BY "photos"."created_at" DESC
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered photos/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 24ms (Views: 21.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/photos" for 60.240.154.190 at 2017-09-27 02:11:49 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mPhoto Load (0.3ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY "photos"."created_at" DESC[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered photos/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 25ms (Views: 22.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/photos" for 60.240.154.190 at 2017-09-27 02:13:05 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mPhoto Load (0.3ms)[0m  SELECT "photos".* FROM "photos"  ORDER BY "photos"."created_at" DESC
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered photos/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 31ms (Views: 27.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/photos" for 60.240.154.190 at 2017-09-27 02:13:25 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mPhoto Load (0.3ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY "photos"."created_at" DESC[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered photos/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/photos" for 60.240.154.190 at 2017-09-27 02:13:36 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mPhoto Load (0.2ms)[0m  SELECT "photos".* FROM "photos"  ORDER BY "photos"."created_at" DESC
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered photos/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 24ms (Views: 21.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/photos" for 60.240.154.190 at 2017-09-27 02:13:53 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT "photos".* FROM "photos"  ORDER BY "photos"."created_at" DESC[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered photos/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 24ms (Views: 21.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/photos" for 60.240.154.190 at 2017-09-27 02:15:40 +0000
+Cannot render console from 60.240.154.190! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mPhoto Load (0.4ms)[0m  SELECT "photos".* FROM "photos"  ORDER BY "photos"."created_at" DESC
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered photos/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 28ms (Views: 25.0ms | ActiveRecord: 0.7ms)
